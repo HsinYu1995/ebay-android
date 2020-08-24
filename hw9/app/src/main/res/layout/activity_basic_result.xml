@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".BasicResult">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="190dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="173dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ebay_default" />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:textStyle="bold|italic"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/topRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="Top Rated Listing"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="260dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/shippingCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="TextView" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="295dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-290dp"
+        android:background="#c0c0c0" />
+
+    <View
+        android:layout_width="205dp"
+        android:layout_height="1dp"
+        android:background="#c0c0c0" />
+
+
+</LinearLayout>
